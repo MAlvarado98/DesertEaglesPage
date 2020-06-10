@@ -1,0 +1,42 @@
+/** ALL LINE CLASSES **/
+#home-line
+    position: fixed
+    width: 0
+    height: 100%
+    background: #0400ff00
+    top: 0
+    left: 0
+    z-index: 20
+    transition: width 1s ease
+    overflow: hidden
+    .line
+        position: absolute
+        width: 4px
+        height: 100%
+        background: #ffffff9a
+        top: 0
+        left: 25%
+    .line-item
+        position: absolute
+        color: #ffffff9a
+        left: 40%
+        transition: color .5s ease
+        :hover
+            color: #ffffffd8
+        :active
+            outline: none
+        img
+            width: 25px
+            outline: 0
+    .line-item:hover img
+        filter: brightness(180%)
+    #line-user
+        top: 0
+        left: 5%
+        color: #ffffffd8
+        transition: top .5s ease-out
+    .line-dot
+        position: absolute
+        color: #ffffff
+        left: 22.5%
+        font-size: .7em

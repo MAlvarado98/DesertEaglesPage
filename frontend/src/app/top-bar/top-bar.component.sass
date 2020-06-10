@@ -1,0 +1,53 @@
+.bar-scrolled
+    font-size: .8em
+    width: 80%!important
+    left: 50%
+    transform: translateX(-50%)
+.navbar
+    background: linear-gradient(180deg, #0000001a 0%, rgba(255,255,255,0) 90%)
+    height: 80px
+    position: fixed
+    width: 100%
+    z-index: 20
+    left: 50%
+    transform: translateX(-50%)
+    transition: width 1s ease
+
+    .navbar-brand
+        color: white
+        font-weight: bold
+        text-shadow: 0 0 2px #000000
+        font-size: 1.6em
+
+        .navbar-brand-logo
+                height: 78px
+                margin-right: 10px
+
+    .navbar-toggler
+        color: white
+        font-size: 2em
+
+    .nav-link
+        color: white
+        text-shadow: 0 0 1px #000000
+        font-weight: bold
+        font-size: 1.1em
+        transition: color .5s ease
+    .nav-link:hover
+        text-decoration: underline
+    .dropdown-menu
+        background: rgba(255, 255, 255, 0)
+        border: 0
+        .dropdown-item
+            background: rgba(255, 255, 255, 0)
+            color: white
+            text-shadow: 0 0 1px #000000
+            font-weight: bold
+        .dropdown-item:hover
+            text-decoration: underline
+
+@media (max-width: 500px)
+    .navbar
+        .navbar-brand
+            .navbar-brand-logo
+                display: none

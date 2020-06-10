@@ -1,0 +1,16 @@
+<div id="home-line">
+    <div class="line"></div>
+    <span id="dot-{{i+1}}" class="line-dot" *ngFor="let elem of elements; let i = index"
+    style="top:{{(i+1)*prop-(prop/2)+6}}px">
+        <i class="fas fa-circle"></i>
+    </span>
+
+    <span class="line-item" id="line-user"><i class="fas fa-user"></i></span>
+    <a class="line-item" id="link-{{i+1}}" title="{{elem[0]}}" href="#box-{{i+1}}" 
+    *ngFor="let elem of elements; let i = index" style="top:{{(i+1)*prop-(prop/2)}}px">
+        <img *ngIf="elem[1]=='img'; else elseBlock" src="../../assets/images/{{elem[2]}}"/>
+        <ng-template #elseBlock>
+            <i class="{{elem[2]}}"></i>
+        </ng-template>
+    </a>
+</div>
